@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Nyxono</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <!-- Página 1: Boas-vindas -->
+        <div class="welcome-page" id="page1">
+            <h1>Bem-vindo ao Nyxono</h1>
+            <p>Sua nova experiência em streaming de música começa aqui</p>
+            <button class="next-btn" onclick="nextPage(1)">Começar Tour</button>
+        </div>
 
+        <!-- Página 2: Descoberta -->
+        <div class="welcome-page" id="page2">
+            <h2>Descubra Novas Músicas</h2>
+            <div class="feature-content">
+                <img src="discover-icon.png" alt="Ícone de descoberta">
+                <p>Explore milhões de músicas e crie suas playlists personalizadas</p>
+            </div>
+            <button class="next-btn" onclick="nextPage(2)">Próximo</button>
+        </div>
+
+        <!-- Página 3: Playlists -->
+        <div class="welcome-page" id="page3">
+            <h2>Crie Suas Playlists</h2>
+            <div class="feature-content">
+                <img src="playlist-icon.png" alt="Ícone de playlist">
+                <p>Organize suas músicas favoritas e compartilhe com seus amigos</p>
+            </div>
+            <button class="next-btn" onclick="nextPage(3)">Próximo</button>
+        </div>
+
+        <!-- Página 4: Final -->
+        <div class="welcome-page" id="page4">
+            <h2>Pronto para Começar!</h2>
+            <p>Sua experiência musical está prestes a começar</p>
+            <button class="start-btn" onclick="startApp()">Entrar no Nyxono</button>
+        </div>
+
+        <!-- Indicador de progresso -->
+        <div class="progress-dots">
+            <span class="dot active" data-page="1"></span>
+            <span class="dot" data-page="2"></span>
+            <span class="dot" data-page="3"></span>
+            <span class="dot" data-page="4"></span>
+        </div>
+    </div>
+    <script src="welcome.js"></script>
+</body>
+</html>
